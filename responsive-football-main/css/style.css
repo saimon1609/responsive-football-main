@@ -1,15 +1,15 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 /* Common Styles or Utilities */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 /* all */
-*{
+* {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -18,17 +18,20 @@ ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
-/* header */
+
 header {
     width: 100%;
     position: relative;
     background-color: rgb(45, 37, 160);
 }
 
-/* navigation */
+.logoMobo {
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -58,13 +61,15 @@ nav ul li a {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 1px;
 }
-/* All button */
-.login-btn, .watch-live-btn, .watch-now-btn{
-    background-color: #E02C6D;
-    color: #FFFFFF;
+
+.login-btn,
+.watch-live-btn,
+.watch-now-btn {
+    background-color: #e02c6d;
+    color: #ffffff;
     width: 150px;
     height: 44px;
     font-weight: 700;
@@ -72,115 +77,143 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
-#login{
+
+#login {
     margin-left: 10px;
 }
-.fa-sign-in-alt{
-    color: #FFFFFF;
+
+.fa-sign-in-alt {
+    color: #ffffff;
 }
 
-/* All button hover */
 .login-btn:hover,
 .watch-live-btn:hover,
 .watch-now-btn:hover,
-.read-more-btn a:hover{
-     background-color: #f51466;
-     transition: all ease 0.2s;
+.read-more-btn a:hover {
+    background-color: #f51466;
+    transition: all ease 0.2s;
 }
 
-
 nav ul li a:hover {
-    background-color: #E02C6D;
-    color: #FFFFFF;
+    background-color: #e02c6d;
+    color: #ffffff;
     transition: all ease 0.2s;
     border-radius: 6px;
 }
 
-/* navigation end */
-
 /* main section */
-/* Home */
-.content {
+.headContent {
     background-color: rgb(45, 37, 160);
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin-top: 207px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-.main-text h1{
-     /* margin: top right down left */
-     width: 485px;
-     height: 230px;
-     margin: 207px 102px 240px 156px;
-     font-size: 62px;
-     font-weight: 600;
-     line-height: 80px;
-     color: #FFFFFF;
-}
-
-.Footballer-banner img{
-    width: 556px;
-    height: 438px;
-    margin-top: 153px;
-}
-
-.live{
-    margin-top: -200px;
-    margin-left: 156px;
+    grid-column-gap: 100px;
     margin-bottom: 169px;
 }
-.fa-arrow-right{
-    padding-left: 8px;
-    color: #FFFFFF;
+
+.watch-live-btn {
+    width: 200px;
 }
 
+.main-text h1 {
+    /* margin: top right down left */
+    width: 485px;
+    height: 230px;
+    /* margin: 207px 102px 15px 156px; */
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #ffffff;
+}
+
+.Footballer-banner img {
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+}
+
+.Footballer-banner {
+    width: 100%;
+    max-width: 650px;
+    height: 520px;
+}
+
+.fa-arrow-right {
+    padding-left: 8px;
+    color: #ffffff;
+}
 
 /* players */
 
-.play{
-    background-color: #FFFFFF;
-    width: 870px;
+.play {
+    background-color: #ffffff;
+    width: 100%;
     padding: 30px;
     margin-top: 21px;
     border-radius: 1px;
+    display: flex;
+    justify-content: center;
 }
-.players{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-column-gap: 30px;
-   grid-row-gap: 30px;
-   color: #1E1E1E;
-   padding-top: 40px;
-   padding-left: 150px;
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 30px;
+    color: #1e1e1e;
+    padding-top: 40px;
 }
-.player{
-     box-shadow: 5px 10px 30px rgb(236, 228, 228);
-     width: 300px;
-     height: 520px;
-     border-radius: 3px;
-     padding-top: 20px;
-     padding-left: 15px;
+
+.player {
+    box-shadow: 5px 10px 30px rgb(236, 228, 228);
+    width: 350px;
+    height: 600px;
+    border-radius: 3px;
+    padding-top: 20px;
 }
-.player:hover{
+
+.player p,
+.player .read-more-btn {
+    text-align: left !important;
+}
+
+.player:hover {
     transform: translateY(-10px);
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
     transition: all ease 0.2s;
 }
+
+.player-1-pic {
+    display: flex;
+    justify-content: center;
+}
+
 .player-1-pic img {
-    width: 250px;
-    height: 206px;
+    width: 100%;
+    max-width: 310px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.player-details{
-        margin-left: 16px;
-        font-size: 18px;
+
+.player-details {
+    margin-left: 16px;
+    font-size: 18px;
 }
-.player-details h3{
-   color: #000000;
-   font-size: 25px;
-   font-weight: bold;
+
+.player-details h3 {
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
 }
-.player-details p{
+
+.player-details p {
     color: #747474;
     font-size: 0.9rem;
     margin: 0px;
@@ -194,104 +227,246 @@ nav ul li a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
 }
- .read-more-btn a{
-     background-color: #E02C6D;
-     color: #FFFFFF;
-     width: 100px;
-     height: 24px;
-     font-weight: 400;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-left: 65px;
-     border-radius: 5px;
- }
 
+.read-more-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.read-more-btn a {
+    text-align: center;
+    background-color: #e02c6d;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
+}
 
 /* highlights */
-
-.highlight{
-     background-color: rgb(255, 255, 255);
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-}
-.highlight-text h1{
-      width: 400px;
-      height: 175px;
-      margin: 180px 90px 0px 126px;
-      font-size: 51px;
-      font-weight: 650;
-      line-height: 65px;
-      color: #04021a;
-}
-.highlight-text p{
-     width: 400px;
-     height: 0px;
-     margin: 20px 102px 130px 126px;
-     font-size: 14px;
-     font-weight: 400;
-     line-height: 30px;
-     color: #686060;
-}
-.watch{
-    /* margin-top: -370px; */
-    margin-left: 126px;
-    margin-bottom: 169px;
-    font-size: 14px;
-}
-.highlight-video{
-    margin-left: 25px;
-    margin-top: 160px;
+.highlight-sec {
+    display: flex;
+    justify-content: center;
 }
 
-.highlight-video iframe{
+.highlight {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50vh;
+    grid-column-gap: 60px;
+}
+
+.highlight-text h1 {
+    font-size: 40px;
+    line-height: 65px;
+}
+
+.highlight-text {
+    width: 400px;
+    color: #04021a;
+}
+
+.highlight-text p {
+    font-weight: 300;
+    color: #8d8c94;
+}
+
+.highlight-video iframe {
     border-radius: 5px;
     border: none;
 }
 
-
 /* Footer */
 
-footer{
+.social-media {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+footer {
     display: grid;
     justify-content: center;
     align-items: center;
 }
-.conmbol-logo{
-    padding-left: 300px;
+
+.conmbol-logo {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
 }
-.conmbol-logo img{
-    width: 60%;
-    height: 60%;
-    padding-left: 200px;
+
+.conmbol-logo img {
+    width: 280px;
 }
-.social-media{
-   padding-left: 580px;
-}
-.fa-instagram{
+
+.fa-instagram {
     padding-right: 20px;
     color: rgb(221, 16, 61);
 }
-.fa-futbol{
+
+.fa-futbol {
     padding-right: 20px;
     color: rgb(20, 69, 231);
 }
-.fa-twitter{
+
+.fa-twitter {
     padding-right: 20px;
     color: rgba(20, 147, 231, 0.973);
 }
-.fa-youtube{
+
+.fa-youtube {
     padding-right: 20px;
     color: rgba(248, 27, 27, 0.973);
 }
 
-.copyright{
+.copyright {
     font-size: 18px;
     font-weight: 400;
     display: flex;
     justify-content: center;
-     padding-bottom: 60px;
+    padding-bottom: 60px;
 }
 
-
 /* Media queries */
+
+@media (max-width: 800px) {
+    header {
+        height: 100px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logoMobo {
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .content {
+        grid-template-columns: repeat(1, 0fr);
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .main-text {
+        margin: 0px;
+        width: 400px;
+        height: auto;
+    }
+
+    .main-text h1 {
+        margin: 0px;
+        margin-top: 70px;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 45px;
+    }
+
+    .live {
+        margin: 0px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .watch-live-btn {
+        width: 50%;
+    }
+
+    .Footballer-banner img {
+        width: 100%;
+        max-width: 360px;
+        height: 300px;
+        margin: 0px;
+    }
+
+    .Footballer-banner {
+        width: 100%;
+        max-width: 400px;
+        height: 350px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Player Section */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+        padding-left: 0px;
+    }
+
+    .play {
+        display: flex;
+        justify-content: center;
+    }
+
+    .highlight {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .highlight-text h1 {
+        width: 400px;
+        height: 120px;
+        margin: 15px;
+        font-size: 35px;
+        padding: 0px;
+    }
+
+    .highlight-text p {
+        width: 300px;
+        height: 160px;
+        margin: 15px;
+    }
+
+    .watch {
+        margin: 0px;
+        margin-left: 15px;
+    }
+
+    .highlight-video {
+        margin: 0px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .highlight-video iframe {
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        max-width: 380px;
+        height: 250px;
+    }
+
+    .social-media {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    footer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conmbol-logo {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .conmbol-logo img {
+        width: 280px;
+        padding-left: 0px;
+    }
+}
